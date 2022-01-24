@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link type="image/png" sizes="32x32" rel="icon" href="assets/icons/favicon-32x32.png">
+	<title>Карта</title>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+
+
+			<a href="file:///C:/Users/PC/OneDrive/Рабочий%20стол/project/index.html#" class="logo">
+				<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+				<div id="typed-strings">
+					<span>Рәхим<br>итегеҙ</span>
+					<span>Добро<br>пожаловать</span>
+				</div>
+
+
+				<div class="text-typing">
+					<span id="typed"></span>
+				</div>
+
+				<div class="lg">В STR</div>
+			</a>
+			<nav>
+				<a href="file:///C:/Users/PC/OneDrive/Рабочий%20стол/project/index.html#" class="nav_link">Главная</a>
+				<a href="#" class="nav_link">карта</a>
+				
+				<a href="file:///C:/Users/PC/OneDrive/Рабочий%20стол/project/history.html#" class="nav_link">История</a>
+				<a href="file:///C:/Users/PC/OneDrive/Рабочий%20стол/project/about.html#" class="nav_link">О проекте</a>
+			</nav>
+
+		</div>
+	</header>
+	<div class="container">
+	<div id="overlay">
+    <div class="popup">
+    	<div class="head__popup">
+        <h2>Подсказка!</h2>              
+        <button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';">
+        	<img src="assets/images/cross.png" alt="">
+        </button>
+        </div>
+        <p>Места, которые сайт советует для посещения, выделены особыми маркерами:</p>
+        <img src="assets/icons/hotel.png">
+        <img src="assets/icons/rest.png">
+        <img src="assets/icons/park.png">
+        <img src="assets/icons/art.png">
+        <img src="assets/icons/mountains.png">
+    </div>
+</div>
+		<div class="adv">
+			<h1>Карта города Стерлитамак</h1>
+		</div>
+		<div id="map"></div>
+		<div class="adv">
+			<div class="bg__adv">
+			<h2 class="sight">Достопримечательности, обязательные для посещения</h2>
+
+			<p><span class="start">Стерлитамакский историко-краеведческий музей</span><br><br>
+			Обозначен на карте </p><img src="assets/icons/history.png" alt="">
+			<p><span class="start">Горы Шиханы</span><br><br>
+			Обозначены на карте</p><img src="assets/icons/mountains.png">
+		</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+        var delay_popup = 10;
+        setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
+</script>
+	<script src="js/constants.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/products.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/main.js"></script>
+	<script async
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4W14vtOr9qpfAO33jfgkzPy3t4SsBoo8&callback=initMap">
+	</script>
+
+
+</body>
+</html>
+
